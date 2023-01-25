@@ -7,6 +7,10 @@ body {
   position: relative;
 }
 
+#btn-sign-up:hover {
+cursor: pointer;
+}
+
 main {
   width: 100%;
   position: absolute;
@@ -77,7 +81,13 @@ main {
   background-color: hsl(71, 73%, 54%);
   color: hsl(0, 0%, 100%);
   border-radius: 6px;
+  box-shadow: 0 .5rem 1rem hsla(0, 0%, 0%, .15);
   font-weight: 700;
+}
+
+#btn-sign-up:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(179, 62%, 43%);
 }
 
 .div-why {
@@ -85,4 +95,60 @@ main {
   color: hsl(0, 0%, 100%);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+
+@media (min-width: 576px) {
+  .div-price-grid {
+    width: 70%;
+  }
+}
+
+@media (min-width: 767px) {
+  .div-price-grid {
+    width: 60%;
+  }
+}
+
+@media (min-width: 922px) {
+  .div-price-grid {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .div-price-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 52%;
+  }
+
+  .div-join-community, .div-monthly-subscription, .div-why {
+    padding: 2rem;
+  }
+
+  .div-join-community > h2 {
+    font-size: 1.5rem;
+  }
+
+  .div-monthly-subscription, .div-why {
+    flex: 2 50%;
+  }
+
+  .div-monthly-subscription {
+    border-bottom-left-radius: 6px;
+  }
+
+  .div-monthly-subscription > div:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  .div-why {
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .div-price-grid {
+    width: 44%;
+  }
 }
